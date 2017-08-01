@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputManager>
+	<InputPlayer id="Player1">
+		<InputButton code="" value="" default="" alt="" default-alt=""/>
+	</InputPlayer>
+</InputManager>

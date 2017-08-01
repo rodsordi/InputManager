@@ -1,0 +1,6 @@
+C:\Users\rodrigoso\Documents\InputManager\InputManager\InputManager\bin\Debug\InputManager.exe.config
+C:\Users\rodrigoso\Documents\InputManager\InputManager\InputManager\bin\Debug\InputManager.exe
+C:\Users\rodrigoso\Documents\InputManager\InputManager\InputManager\bin\Debug\InputManager.pdb
+C:\Users\rodrigoso\Documents\InputManager\InputManager\InputManager\obj\Debug\InputManager.csprojResolveAssemblyReference.cache
+C:\Users\rodrigoso\Documents\InputManager\InputManager\InputManager\obj\Debug\InputManager.exe
+C:\Users\rodrigoso\Documents\InputManager\InputManager\InputManager\obj\Debug\InputManager.pdb
