@@ -12,15 +12,57 @@ namespace InputManager
     {
         static void Main(string[] args)
         {
-            InputManager im = new InputManager();
-            foreach (InputPlayer p in im.Load())
+            TestLoad();
+            /*foreach (InputPlayer ip in imputManager.Load())
             {
-                Console.WriteLine(p);
-                foreach (InputButton ib in p.buttons)
+                Console.WriteLine(ip);
+                foreach (InputButton ib in ip.buttons)
                     Console.WriteLine(ib);
-            }
+            }*/
 
             while (true) ;
+        }
+
+        public static void TestLoad()
+        {
+            InputManager inputManager = new InputManager();
+            InputPlayer player = inputManager.Load("Joystick1", "pc");
+            Console.WriteLine(player);
+            if (player != null)
+                foreach (InputButton ib in player.buttons)
+                    Console.WriteLine(ib);
+        }
+
+        public static void TestSave()
+        {
+            InputManager inputManager = new InputManager();
+
+            InputButton inputButton = new InputButton()
+            {
+                code = "context",
+                value = "space"
+            };
+
+            InputButton inputButton2 = new InputButton()
+            {
+                code = "special",
+                value = "return",
+                defaultValue = "backspace",
+                defaultAlt = "backspace"
+            };
+
+            List<InputButton> buttons = new List<InputButton>();
+            buttons.Add(inputButton);
+            buttons.Add(inputButton2);
+
+            InputPlayer inputPlayer = new InputPlayer()
+            {
+                id = "Joystick1",
+                type = "pc",
+                buttons = buttons
+            };
+
+            inputManager.Save(inputPlayer);
         }
 
         public static List<Pessoa> ListarPessoas()

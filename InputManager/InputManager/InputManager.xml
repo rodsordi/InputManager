@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<InputManager>
-	<InputPlayer id="Player1">
-		<InputButton code="" value="" default="" alt="" default-alt=""/>
-	</InputPlayer>
-</InputManager>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Inputs>
+  <InputPlayer id="Joystick1" type="Xbox">
+    <InputButton code="context" value="space1" default="spaceTeste Maluco" />
+  </InputPlayer>
+  <InputPlayer id="Joystick1" type="pc">
+    <InputButton code="context" value="space" />
+    <InputButton code="special" value="return" default="backspace" default-alt="backspace" />
+  </InputPlayer>
+</Inputs>

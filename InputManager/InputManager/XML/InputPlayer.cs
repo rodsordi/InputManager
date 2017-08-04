@@ -9,6 +9,7 @@ namespace InputManager.XML
     class InputPlayer
     {
         public string id;
+        public string type;
         public List<InputButton> buttons;
 
         public override string ToString()
