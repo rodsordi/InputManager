@@ -25,7 +25,7 @@ namespace InputManager
 
                 if (root != null)
                 {
-                    XElement xInputPlayer = root.Elements().Where(t => t.Attribute("id").Equals(id) && t.Attribute("type").Equals(type)).FirstOrDefault();
+                    XElement xInputPlayer = root.Elements().Where(t => t.Attribute("id").Value.Equals(id) && t.Attribute("type").Value.Equals(type)).FirstOrDefault();
 
                     if (xInputPlayer != null)
                     {
